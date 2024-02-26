@@ -1,0 +1,212 @@
+#todo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+  background: linear-gradient(
+    to bottom right,
+    rgb(202, 128, 78),
+    rgba(118, 118, 255, 0.555)
+  );
+  font-size: 2rem;
+  /* margin: 4rem 16rem; */
+  border-radius: 12px;
+}
+#todo__title {
+  margin-bottom: 1rem;
+  color: white;
+}
+#input-container {
+  /* overflow: auto; */
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+#todo__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+#todo__list:hover {
+  overflow: auto;
+}
+.todo__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#counter-text {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  margin-right: 1rem;
+  color: white;
+}
+#add--todo {
+  padding: 0.5em;
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border: 0;
+  /* font-size: 1rem; */
+}
+#search--todo {
+  padding: 0.5em;
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border: 0;
+  /* font-size: 1rem; */
+}
+#search--btn {
+  background-color: white;
+  background-image: url("images/search.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0.92rem;
+  border: 0;
+  width: 4rem;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+#add--btn {
+  border: 0;
+  background-color: white;
+  background-image: url("images/check-list.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0.92rem;
+  border: 0;
+  width: 4rem;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+#search--btn:hover {
+  cursor: pointer;
+}
+
+#add--btn:hover {
+  cursor: pointer;
+}
+
+.todo__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: white;
+  padding: 0.5rem;
+  width: 30rem;
+  margin-bottom: 0.5rem;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+  /* box-shadow:; */
+}
+.todo__item p {
+  overflow: auto;
+}
+.todo__item:hover {
+  transform: scale(1.02);
+}
+.task-checked {
+  text-decoration: line-through;
+  font-size: 1rem;
+  flex-grow: 2;
+}
+.task-unchecked {
+  font-size: 1rem;
+  flex-grow: 2;
+}
+.todo__item input[type="checkbox"] {
+  border: 1rem;
+  height: 1.5rem;
+  width: 2.5rem;
+}
+.delete-button {
+  height: 2rem;
+  width: 2.5rem;
+  border: 0;
+  background-color: transparent;
+  background-image: url("images/close.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.1s ease;
+}
+.delete-button:hover {
+  transform: scale(1.2);
+}
+.edit-button {
+  height: 2rem;
+  width: 2.5rem;
+  border: 0;
+  background-color: transparent;
+  background-image: url("./images/edit.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.1s ease;
+}
+.edit-button:hover {
+  transform: scale(1.2);
+}
+.edit-window {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 20rem;
+  height: 10rem;
+  border-radius: 12px;
+  background-color: rgb(230, 228, 228);
+  z-index: 1;
+  transform: translate(-50%, -25%);
+}
+#edit__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#edit__input {
+  margin-top: 3.4rem;
+  border: 0;
+  border-radius: 12px;
+  padding: 0.3em;
+  width: 12rem;
+}
+#btn-container {
+  display: flex;
+  gap: 0.5rem;
+}
+#edit-btn {
+  margin-top: 0.3rem;
+  padding: 0.4em;
+  border: 0;
+  border-radius: 8px;
+  background: linear-gradient(
+    rgba(178, 64, 178, 0.723),
+    rgba(85, 85, 189, 0.751)
+  );
+  color: white;
+}
+#edit-btn:hover {
+  cursor: pointer;
+  background: linear-gradient(rgb(178, 64, 178), rgb(85, 85, 189));
+}
+#edit-cancel {
+  margin-top: 0.3rem;
+  padding: 0.4em;
+  border: 0;
+  border-radius: 8px;
+  background-color: rgb(245, 99, 99);
+  color: white;
+}
+#edit-cancel:hover {
+  cursor: pointer;
+  background-color: rgb(242, 75, 75);
+}

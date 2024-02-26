@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="todo">
+      <button type="button" id="clear-btn">clear</button>
+      <h1 id="todo__title">Practice To-Do</h1>
+      <span id="counter-text">Tasks:</span>
+      <!-- <button type="button" id="todo__clear">Clear</button> -->
+      <div id="input-container">
+        <form action="submit" class="todo__form">
+          <label for="add--todo"></label>
+          <input type="text" id="add--todo" placeholder="Enter A Task" />
+          <button
+            type="submit"
+            id="add--btn"
+            aria-labelledby="add a new task"
+          ></button>
+        </form>
+        <form class="todo__form" id="search-form">
+          <label for="search--todo"></label>
+          <input
+            type="text"
+            id="search--todo"
+            placeholder="Search for a task..."
+          />
+          <button
+            type="submit"
+            id="search--btn"
+            aria-labelledby="search for a task"
+          ></button>
+        </form>
+      </div>
+      <div id="todo__list"></div>
+    </section>
+    <div class="edit-window">
+      <form action="submit" id="edit__form">
+        <input type="text" id="edit__input" />
+        <div id="btn-container">
+          <button type="submit" id="edit-btn">Confirm</button>
+          <button type="button" id="edit-cancel">Cancel</button>
+        </div>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
